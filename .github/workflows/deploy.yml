@@ -31,6 +31,9 @@ jobs:
           cp islamic-pwa/index.html site/
           cp islamic-pwa/manifest.webmanifest site/
           cp islamic-pwa/sw.js site/
+          cp islamic-pwa/robots.txt site/
+          cp islamic-pwa/sitemap.xml site/
+          cp islamic-pwa/googled7d26d20e450189a.html site/
           cp -R islamic-pwa/assets site/
           cp -R islamic-pwa/css site/
           cp -R islamic-pwa/js site/
