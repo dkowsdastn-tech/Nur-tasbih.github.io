@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://dkowsdastn-tech.github.io/Nur-tasbih.github.io/islamic-pwa/sitemap.xml
