@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#0a4f42" />
+    <meta name="robots" content="noindex, nofollow" />
+    <meta name="description" content="Закрытая панель модерации историй Nur." />
+    <title>Nur — Модерация историй</title>
+    <link rel="icon" href="./assets/icon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="./css/moderator.css" />
+    <script src="./js/moderator.js" defer></script>
+  </head>
+  <body>
+    <main class="moderator-shell">
+      <a class="back-link" href="./index.html" aria-label="Вернуться в приложение Nur">
+        <span aria-hidden="true">←</span>
+        Вернуться в Nur
+      </a>
+
+      <header class="hero">
+        <p class="eyebrow"><span aria-hidden="true">✦</span> Nur · приватная панель</p>
+        <h1>Истории сообщества</h1>
+        <p class="hero-copy">
+          Здесь вы просматриваете поступившие истории и вручную решаете, что опубликовать.
+          Ничего не становится публичным без вашего действия.
+        </p>
+      </header>
+
+      <section class="access-card" id="accessCard" aria-labelledby="accessTitle">
+        <div class="section-heading">
+          <div class="heading-icon" aria-hidden="true">⌘</div>
+          <div>
+            <p class="eyebrow">Доступ администратора</p>
+            <h2 id="accessTitle">Введите токен сервера</h2>
+          </div>
+        </div>
+        <p class="quiet-copy">
+          Токен отправляется только с запросом к вашему серверу. Он не сохраняется в браузере,
+          в ссылке или в хранилище приложения.
+        </p>
+        <form id="accessForm" class="access-form" novalidate>
+          <label for="adminToken">Административный токен</label>
+          <div class="token-row">
+            <input
+              id="adminToken"
+              name="adminToken"
+              type="password"
+              inputmode="text"
+              autocomplete="off"
+              autocapitalize="off"
+              autocorrect="off"
+              spellcheck="false"
+              placeholder="Вставьте ADMIN_TOKEN"
+              required
+            />
+            <button class="button button-primary" id="connectButton" type="submit">Открыть очередь</button>
+          </div>
+        </form>
+        <p class="inline-status" id="accessStatus" role="status" aria-live="polite"></p>
+        <p class="small-note">
+          Если доступ не открывается, проверьте <code>ADMIN_TOKEN</code> в файле
+          <code>backend/.env</code> и перезапустите сервер.
+        </p>
+      </section>
+
+      <section id="dashboard" class="dashboard" hidden aria-labelledby="queueTitle">
+        <div class="toolbar">
+          <div>
+            <p class="eyebrow">Ручная проверка</p>
+            <h2 id="queueTitle">Очередь историй</h2>
+          </div>
+          <button id="disconnectButton" class="button button-ghost" type="button">Закрыть доступ</button>
+        </div>
+
+        <div class="filters" aria-label="Фильтр историй">
+          <label class="filter-label" for="statusFilter">Показать</label>
+          <select id="statusFilter" name="statusFilter">
+            <option value="pending">На проверке</option>
+            <option value="published">Опубликованные</option>
+            <option value="rejected">Отклонённые</option>
+            <option value="all">Все истории</option>
+          </select>
+          <button id="refreshButton" class="button button-secondary" type="button">
+            <span aria-hidden="true">↻</span> Обновить
+          </button>
+          <span id="queueSummary" class="queue-summary" aria-live="polite"></span>
+        </div>
+
+        <p class="inline-status dashboard-status" id="dashboardStatus" role="status" aria-live="polite"></p>
+        <div id="storiesList" class="stories-list" aria-live="polite" aria-busy="false"></div>
+      </section>
+    </main>
+
+    <dialog id="confirmDialog" class="confirm-dialog" aria-labelledby="confirmTitle">
+      <form id="confirmForm" method="dialog">
+        <div class="dialog-mark" id="confirmMark" aria-hidden="true">✦</div>
+        <p class="eyebrow">Подтверждение действия</p>
+        <h2 id="confirmTitle">Изменить статус?</h2>
+        <p id="confirmCopy" class="dialog-copy"></p>
+        <div class="dialog-actions">
+          <button class="button button-ghost" value="cancel" type="submit">Отмена</button>
+          <button id="confirmAction" class="button button-primary" value="confirm" type="submit">Подтвердить</button>
+        </div>
+      </form>
+    </dialog>
+  </body>
+</html>

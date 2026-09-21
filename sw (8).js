@@ -1,5 +1,5 @@
 /* Offline application shell. API requests deliberately bypass this cache. */
-const CACHE = "nur-pwa-v6";
+const CACHE = "nur-pwa-v5";
 const CORE = [
   "./",
   "./index.html",

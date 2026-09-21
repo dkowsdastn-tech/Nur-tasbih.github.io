@@ -2,7 +2,7 @@
 <html lang="ru" dir="ltr" data-theme="light">
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
     <meta name="theme-color" content="#08785f" />
     <meta name="description" content="Nur — бережная исламская практика: тасбих, знания, истории и Коран." />
     <meta name="mobile-web-app-capable" content="yes" />
@@ -15,7 +15,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Manrope:wght@400;500;600;700;800&family=Noto+Naskh+Arabic:wght@400;600;700&family=Noto+Sans+Bengali:wght@400;500;600;700&family=Noto+Sans:wght@400;500;600;700;800&family=Noto+Nastaliq+Urdu:wght@400;500;600;700&display=swap" rel="stylesheet" />
     <title>Nur — осознанная практика</title>
-    <link rel="stylesheet" href="./css/styles.css?v=6" />
+    <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
     <div class="app-shell">
@@ -35,7 +35,7 @@
           <div class="screen-topline"><span class="eyebrow" data-i18n="tasbih.eyebrow">Mindful practice</span><span class="live-dot"><i></i><span data-i18n="tasbih.private">Private on this device</span></span></div>
           <div class="tasbih-heading clean-heading">
             <div><h1 data-i18n="tasbih.title">Smart tasbih</h1><p id="practiceSubtitle">Choose a dhikr collection</p></div>
-            <div class="tasbih-header-actions"><button class="icon-action focus-toggle" id="toggleFocusMode" type="button" aria-label="Focus mode" title="Focus mode">⛶</button><button class="icon-action" id="clearCurrent" type="button" aria-label="Clear current practice" title="Clear current practice">⌫</button></div>
+            <button class="icon-action" id="clearCurrent" type="button" aria-label="Clear current practice" title="Clear current practice">⌫</button>
           </div>
           <button class="tasbih-button" id="countButton" type="button" aria-label="Increase counter">
             <span class="tasbih-pulse"></span><span class="tasbih-orbit orbit-one"></span><span class="tasbih-orbit orbit-two"></span><span class="tasbih-number" id="countValue">0</span>
@@ -52,7 +52,7 @@
         <section class="screen" id="scratch" data-screen="scratch">
           <div class="screen-topline"><span class="eyebrow" data-i18n="scratch.eyebrow">A small Sunnah for today</span><span class="scratch-safe" data-i18n="scratch.safe">Touch-friendly</span></div>
           <h1 data-i18n="scratch.title">Scratch to discover</h1><p class="screen-intro" data-i18n="scratch.intro">Move your finger over the cover to reveal a gentle reminder.</p>
-          <div class="scratch-card" id="scratchCard"><article class="sunna-content" id="sunnaContent" aria-live="polite"></article><canvas id="scratchCanvas" aria-label="Scratch the card to reveal its reminder"></canvas><div class="scratch-hint" id="scratchHint" aria-hidden="true"><span>☝</span><span data-i18n="scratch.hint">Сотрите весь золотой слой</span></div></div>
+          <div class="scratch-card" id="scratchCard"><article class="sunna-content" id="sunnaContent" aria-live="polite"></article><canvas id="scratchCanvas" aria-label="Scratch the card to reveal its reminder"></canvas><div class="scratch-hint" id="scratchHint" aria-hidden="true"><span>☝</span><span data-i18n="scratch.hint">Scratch here</span></div></div>
           <div class="scratch-meter" aria-live="polite"><span id="scratchPercent">0%</span><div><i id="scratchBar"></i></div><span data-i18n="scratch.revealed">revealed</span></div>
           <div class="split-actions"><button class="secondary-button" id="revealSunna" type="button"><span aria-hidden="true">◌</span><span data-i18n="scratch.reveal">Reveal card</span></button><button class="primary-button" id="newSunna" type="button"><span aria-hidden="true">✦</span><span data-i18n="scratch.new">New card</span></button></div>
           <p class="source-note" data-i18n="scratch.sourceNote">These are concise renderings; check wording in primary sources.</p>
@@ -61,7 +61,6 @@
         <section class="screen" id="knowledge" data-screen="knowledge">
           <div class="screen-topline"><span class="eyebrow" data-i18n="knowledge.eyebrow">Read with benefit</span><span class="reading-badge" id="knowledgeCount">6</span></div>
           <h1 data-i18n="knowledge.title">Knowledge & benefit</h1><p class="screen-intro" data-i18n="knowledge.intro">Short, grounded reminders for a thoughtful day.</p>
-          <section class="knowledge-quest"><span class="quest-orb">✦</span><div><small>ЗНАНИЕ НА СЕГОДНЯ</small><strong id="knowledgeQuestTitle">Откройте одно напоминание</strong><p id="knowledgeQuestText">Нажмите карточку, прочитайте источник и выберите небольшой шаг.</p></div><button id="newKnowledgeQuest" type="button" aria-label="New daily knowledge">↻</button></section>
           <button class="daily-insight" id="openDailyInsight" type="button"><span class="insight-spark">✦</span><span><small data-i18n="knowledge.today">Today’s reflection</small><strong id="dailyInsightTitle">A small good deed</strong><em id="dailyInsightSource">Sahih Muslim, 2626</em></span><b aria-hidden="true">›</b></button>
           <div class="knowledge-filters" id="knowledgeFilters" aria-label="Knowledge topics"></div><div class="knowledge-grid" id="knowledgeCards" aria-live="polite"></div>
         </section>
@@ -85,9 +84,9 @@
         </section>
 
         <section class="screen" id="stories" data-screen="stories">
-          <div class="screen-topline"><span class="eyebrow">ВАШЕ ПРОСТРАНСТВО</span><button class="refresh-button" id="refreshStories" type="button" aria-label="Refresh stories">↻</button></div><h1>Ваши истории</h1><p class="screen-intro">Расскажите о своём пути, благодарности или важном уроке. Сообщение сначала попадёт в закрытую очередь поддержки.</p>
+          <div class="screen-topline"><span class="eyebrow" data-i18n="stories.eyebrow">Community, moderated with care</span><button class="refresh-button" id="refreshStories" type="button" aria-label="Refresh stories">↻</button></div><h1 data-i18n="stories.title">Your stories</h1><p class="screen-intro" data-i18n="stories.intro">A calm place for paths to Islam, gratitude, and lessons that may help someone else.</p>
           <div class="stories-status" id="storiesStatus" role="status" aria-live="polite"></div><div class="stories-list" id="storiesList"></div>
-          <button class="submit-story-cta" id="openStoryForm" type="button"><span>✎</span><span><strong>Написать в поддержку</strong><small>Сообщение увидит только модератор; публикация — лишь после его решения</small></span><b>›</b></button><p class="source-note">Не добавляйте телефоны, адреса, документы и другие личные данные.</p>
+          <button class="submit-story-cta" id="openStoryForm" type="button"><span>✎</span><span><strong data-i18n="stories.share">Share your story</strong><small data-i18n="stories.shareHint">Every submission is reviewed before publication</small></span><b>›</b></button><p class="source-note" data-i18n="stories.notice">Do not include phone numbers, addresses, documents, or other sensitive personal details.</p>
         </section>
 
         <section class="screen" id="settings" data-screen="settings">
@@ -121,6 +120,6 @@
     <dialog id="clearDataDialog" class="modal"><form method="dialog"><button class="modal-close" value="cancel" aria-label="Close">×</button><div class="eyebrow" data-i18n="settings.dataWarning">Device data</div><h2 data-i18n="settings.clearData">Clear local app data</h2><p data-i18n="settings.clearConfirm">This removes only this browser’s Nur counter, saved practice history, and preferences. It cannot remove stories already sent to your server.</p><div class="modal-buttons"><button class="secondary-button" value="cancel" type="submit" data-i18n="common.cancel">Cancel</button><button class="danger-button" id="confirmClearData" value="confirm" type="submit" data-i18n="settings.clearNow">Clear data</button></div></form></dialog>
     <div class="toast" id="toast" role="status" aria-live="polite"></div>
     <svg class="svg-sprite" aria-hidden="true"><symbol id="icon-moon" viewBox="0 0 24 24"><path d="M20.4 15.3A8.6 8.6 0 0 1 8.7 3.6 8.7 8.7 0 1 0 20.4 15.3Z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></symbol></svg>
-    <script type="module" src="./js/app.js?v=6"></script>
+    <script type="module" src="./js/app.js"></script>
   </body>
 </html>

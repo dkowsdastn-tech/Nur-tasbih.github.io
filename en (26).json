@@ -1,0 +1,261 @@
+{
+  "nav": {
+    "tasbih": "Tasbih",
+    "sunna": "Sunnah",
+    "knowledge": "Learn",
+    "assistant": "AI",
+    "quran": "Qur’an",
+    "stories": "Stories",
+    "settings": "More"
+  },
+  "common": {
+    "save": "Save",
+    "cancel": "Cancel",
+    "close": "Close"
+  },
+  "tasbih": {
+    "eyebrow": "Mindful practice",
+    "title": "Smart tasbih",
+    "save": "Save",
+    "chooseDhikr": "Choose dhikr",
+    "tap": "tap for dhikr",
+    "reset": "Reset",
+    "savedToday": "Saved today: {count}",
+    "saved": "Result saved to this device",
+    "resetDone": "Counter reset",
+    "goalDone": "MashaAllah! {name} is complete.",
+    "private": "Private on this device",
+    "currentPractice": "Current practice",
+    "choosePractice": "Dhikr collections",
+    "collectionsEyebrow": "Choose your practice",
+    "collectionsTitle": "Dhikr collections",
+    "collectionsIntro": "Select a gentle, structured set or keep a free counter.",
+    "freePrompt": "Choose a dhikr collection when you are ready.",
+    "saved": "Saved on this device.",
+    "ready": "A quiet count, saved only on this device.",
+    "nothingToSave": "Count something first, then save it.",
+    "practiceSelected": "Selected: {name}",
+    "nextStep": "Next: {phrase}",
+    "dhikrs": [
+      {
+        "arabic": "سُبْحَانَ ٱللَّٰهِ",
+        "label": "SubhanAllah",
+        "transcription": "SubḥānAllāh"
+      },
+      {
+        "arabic": "ٱلْحَمْدُ لِلَّٰهِ",
+        "label": "Alhamdulillah",
+        "transcription": "Alḥamdulillāh"
+      },
+      {
+        "arabic": "ٱللَّٰهُ أَكْبَرُ",
+        "label": "Allahu Akbar",
+        "transcription": "Allāhu Akbar"
+      },
+      {
+        "arabic": "لَا إِلَٰهَ إِلَّا ٱللَّٰهُ",
+        "label": "La ilaha illallah",
+        "transcription": "Lā ilāha illā-llāh"
+      }
+    ]
+  },
+  "scratch": {
+    "eyebrow": "A small Sunnah for today",
+    "title": "Scratch to discover",
+    "intro": "Move your finger over the cover to reveal a gentle reminder.",
+    "hint": "Scratch here",
+    "safe": "Touch-friendly",
+    "revealed": "revealed",
+    "reveal": "Reveal card",
+    "new": "New card",
+    "complete": "The reminder is fully revealed ✦",
+    "manualComplete": "Card revealed ✦",
+    "sourceNote": "These are concise renderings; check wording in primary sources.",
+    "sunnahs": [
+      {
+        "quote": "Do not belittle any good deed, even meeting your brother with a cheerful face.",
+        "source": "Sahih Muslim, 2626"
+      },
+      {
+        "quote": "Allah loves gentleness in every matter.",
+        "source": "Sahih al-Bukhari, 6927; Sahih Muslim, 2165"
+      },
+      {
+        "quote": "Whoever does not show mercy will not be shown mercy.",
+        "source": "Sahih al-Bukhari, 6013; Sahih Muslim, 2318"
+      },
+      {
+        "quote": "The best among you are those with the best character.",
+        "source": "Sahih al-Bukhari, 6035"
+      }
+    ]
+  },
+  "knowledge": {
+    "eyebrow": "Read with benefit",
+    "title": "Knowledge & benefit",
+    "intro": "Short, grounded reminders for a thoughtful day.",
+    "today": "Today’s reflection",
+    "filterAll": "All",
+    "filterDaily": "Daily",
+    "filterHeart": "Heart",
+    "filterPractice": "Practice",
+    "read": "One small step today",
+    "cards": [
+      {
+        "label": "Generosity",
+        "title": "Charity does not diminish",
+        "text": "The Prophet ﷺ taught that charity does not diminish wealth. Even a small, regular act of support can nourish gratitude and care for people.",
+        "source": "Sahih Muslim, 2588",
+        "color": "#0b7160"
+      },
+      {
+        "label": "Remembrance",
+        "title": "Begin the morning with dhikr",
+        "text": "The Qur’an calls believers to remember Allah often. A few quiet minutes of mindful dhikr can be a gentle anchor for the day.",
+        "source": "Qur’an, 33:41",
+        "color": "#946a25"
+      },
+      {
+        "label": "Night",
+        "title": "A quiet Tahajjud moment",
+        "text": "The voluntary night prayer is a chance to turn to Allah in private. Start small and do not turn voluntary worship into an unbearable burden.",
+        "source": "Qur’an, 17:79",
+        "color": "#53427c"
+      }
+    ]
+  },
+  "assistant": {
+    "eyebrow": "A considerate guide",
+    "title": "Islamic guide",
+    "disclaimer": "This is a reference helper, not a replacement for a scholar or imam.",
+    "inputLabel": "Your question",
+    "placeholder": "Ask a considerate question…",
+    "greeting": "Assalamu alaikum. I respond only as a reference helper: from the Qur’an and authentic hadith, without fatwas. How can I help?",
+    "assistantLabel": "Assistant",
+    "youLabel": "You",
+    "sourceOnly": "Qur’an · Sahih sources",
+    "quran": "Qur’an",
+    "bukhari": "Sahih al-Bukhari",
+    "muslim": "Sahih Muslim",
+    "thinking": "Thinking",
+    "footnote": "For a personal or disputed matter, please speak with a knowledgeable local imam.",
+    "chips": [
+      "How do I perform wudu?",
+      "What invalidates fasting?",
+      "Conditions for du'a acceptance",
+      "Why do scholars differ?"
+    ]
+  },
+  "quran": {
+    "eyebrow": "Listen attentively",
+    "title": "The Noble Qur’an",
+    "reciter": "Reciter",
+    "surah": "Surah",
+    "nowPlaying": "Now playing",
+    "audioNote": "Audio is streamed from public external libraries; an internet connection is required.",
+    "loading": "Loading audio…",
+    "audioError": "Audio is unavailable. Check your connection or choose another reciter."
+  },
+  "settings": {
+    "eyebrow": "Your space",
+    "title": "Settings & FAQ",
+    "appearance": "Appearance",
+    "appearanceHint": "Light or dark theme",
+    "language": "Language",
+    "languageHint": "Interface, content, and script-aware font",
+    "experience": "Experience",
+    "sound": "Gentle sounds",
+    "soundHint": "Tones for dhikr, tabs, and milestones",
+    "haptics": "Haptic feedback",
+    "hapticsHint": "Short vibration when supported",
+    "motion": "Reduce motion",
+    "motionHint": "Softer transitions and effects",
+    "languageSection": "Language & typography",
+    "appSection": "App & data",
+    "install": "Install app",
+    "installHint": "Use it like an app on your phone",
+    "installNow": "Install now",
+    "readyToInstall": "Ready to install",
+    "installed": "Nur is installed.",
+    "installedTitle": "Nur is already installed",
+    "installedText": "You are using the standalone app.",
+    "installedHint": "Installed on this device",
+    "serverRequiredTitle": "Open Nur through its server",
+    "serverRequiredText": "A file opened directly from your computer cannot register a service worker, so a browser cannot install it as a PWA.",
+    "serverStep1": "Open the backend folder in a terminal.",
+    "serverStep2": "Run: npm start",
+    "serverStep3": "Open http://localhost:8080, then return here to install.",
+    "readyInstallTitle": "Nur is ready to install",
+    "readyInstallText": "Install it for a full-screen, app-like experience.",
+    "readyInstallStep": "Use the Install now button below.",
+    "iosInstallTitle": "Add Nur to your Home Screen",
+    "iosInstallText": "Safari installs web apps from its Share menu.",
+    "iosStep1": "Open this page in Safari.",
+    "iosStep2": "Tap Share.",
+    "iosStep3": "Choose Add to Home Screen, then Add.",
+    "browserInstallTitle": "Install from your browser",
+    "browserInstallText": "If the native prompt is not ready yet, use your browser menu: Install app or Add to Home screen.",
+    "browserStep1": "Make sure the page is opened through HTTPS or localhost.",
+    "browserStep2": "Open the browser menu and choose Install app / Add to Home screen.",
+    "browserStep3": "If you just opened the page, wait a moment for the service worker to finish installing.",
+    "export": "Export my local data",
+    "exportHint": "A private backup file on this device",
+    "exported": "Local backup downloaded.",
+    "moderate": "Moderate submitted stories",
+    "moderateHint": "Requires your server admin token",
+    "clearData": "Clear local app data",
+    "clearDataHint": "This never affects published stories on your server",
+    "dataWarning": "Device data",
+    "clearConfirm": "This removes only this browser’s Nur counter, saved practice history, and preferences. It cannot remove stories already sent to your server.",
+    "clearNow": "Clear data",
+    "privacy": "Your counter and preferences stay in this browser. Stories are only sent after you deliberately submit the form.",
+    "darkTheme": "Use dark theme",
+    "lightTheme": "Use light theme"
+  },
+  "faq": {
+    "title": "Frequently asked questions",
+    "items": [
+      {
+        "q": "Is my tasbih count saved?",
+        "a": "Yes. The current count, goal, and dhikr stay only in this browser’s localStorage. Clearing site data removes them."
+      },
+      {
+        "q": "Can I use the app offline?",
+        "a": "After its first visit, the interface and local tasbih work offline. Audio and the moderated story feed require internet."
+      },
+      {
+        "q": "Can the AI issue a fatwa?",
+        "a": "No. The assistant is for reference only. For personal, complex, or disputed questions, consult a knowledgeable local imam."
+      },
+      {
+        "q": "Why do rulings sometimes differ?",
+        "a": "Some questions have recognised differences among scholars and legal schools. The app does not choose an opinion for the user."
+      }
+    ]
+  },
+  "stories": {
+    "eyebrow": "Community, moderated with care",
+    "title": "Your stories",
+    "intro": "A calm place for paths to Islam, gratitude, and lessons that may help someone else.",
+    "loading": "Loading stories…",
+    "publishedCount": "Published: {count}",
+    "empty": "No published stories yet. The first approved story will appear here.",
+    "serverUnavailable": "Stories need the included Nur server. Start it, then open the app at localhost or your HTTPS domain.",
+    "share": "Share your story",
+    "shareHint": "Every submission is reviewed before publication",
+    "notice": "Do not include phone numbers, addresses, documents, or other sensitive personal details.",
+    "formEyebrow": "Send for review",
+    "formTitle": "Share with care",
+    "formIntro": "Your story is private until you approve this submission and a moderator publishes it.",
+    "author": "Name or pen name",
+    "storyTitle": "Title",
+    "body": "Your story",
+    "consent": "I understand that this story is sent to the site moderator for review and should contain no sensitive personal information.",
+    "submit": "Send for review",
+    "formInvalid": "Add a name, a title, at least 20 characters, and confirm the privacy notice.",
+    "sending": "Sending for review…",
+    "sent": "Thank you. Your story has been sent for moderation.",
+    "sendError": "Could not send the story. Check the server and try again."
+  },
+  "meta": { "title": "Nur — mindful practice" }
+}
