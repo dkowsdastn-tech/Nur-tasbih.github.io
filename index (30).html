@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="ru" dir="ltr" data-theme="light">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover" />
+    <meta name="theme-color" content="#08785f" />
+    <meta name="description" content="Nur — бережная исламская практика: тасбих, знания, истории и Коран." />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <link rel="manifest" href="./manifest.webmanifest" />
+    <link rel="icon" href="./assets/icon.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="./assets/icon-192.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Manrope:wght@400;500;600;700;800&family=Noto+Naskh+Arabic:wght@400;600;700&family=Noto+Sans+Bengali:wght@400;500;600;700&family=Noto+Sans:wght@400;500;600;700;800&family=Noto+Nastaliq+Urdu:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <title>Nur — осознанная практика</title>
+    <link rel="stylesheet" href="./css/styles.css?v=6" />
+  </head>
+  <body>
+    <div class="app-shell">
+      <header class="topbar">
+        <button class="icon-button" id="themeToggle" type="button" aria-label="Переключить тему" title="Переключить тему">
+          <svg aria-hidden="true"><use href="#icon-moon"></use></svg>
+        </button>
+        <div class="brand" aria-label="Nur"><span class="brand-mark">۞</span><span>NUR</span></div>
+        <label class="language-picker" title="Language">
+          <span aria-hidden="true">文</span>
+          <select id="languageSelect" aria-label="Choose language"></select>
+        </label>
+      </header>
+
+      <main id="appMain" tabindex="-1">
+        <section class="screen active" id="tasbih" data-screen="tasbih">
+          <div class="screen-topline"><span class="eyebrow" data-i18n="tasbih.eyebrow">Mindful practice</span><span class="live-dot"><i></i><span data-i18n="tasbih.private">Private on this device</span></span></div>
+          <div class="tasbih-heading clean-heading">
+            <div><h1 data-i18n="tasbih.title">Smart tasbih</h1><p id="practiceSubtitle">Choose a dhikr collection</p></div>
+            <div class="tasbih-header-actions"><button class="icon-action focus-toggle" id="toggleFocusMode" type="button" aria-label="Focus mode" title="Focus mode">⛶</button><button class="icon-action" id="clearCurrent" type="button" aria-label="Clear current practice" title="Clear current practice">⌫</button></div>
+          </div>
+          <button class="tasbih-button" id="countButton" type="button" aria-label="Increase counter">
+            <span class="tasbih-pulse"></span><span class="tasbih-orbit orbit-one"></span><span class="tasbih-orbit orbit-two"></span><span class="tasbih-number" id="countValue">0</span>
+          </button>
+          <section class="practice-panel" id="practicePanel" aria-live="polite">
+            <div class="practice-panel-header"><span class="practice-icon" id="practiceIcon">∞</span><div><span class="practice-kicker" id="practiceKicker">Free counter</span><strong id="practiceTitle">Your own dhikr</strong></div><span class="practice-step" id="practiceStep">∞</span></div>
+            <p class="arabic-phrase" id="practiceArabic">—</p><p class="transliteration" id="practiceTransliteration">Choose a collection below</p>
+            <div class="practice-progress" id="practiceProgressWrap"><div><i id="practiceProgress"></i></div><span id="practiceProgressLabel">0</span></div>
+          </section>
+          <div class="tasbih-actions upgraded-actions"><button class="primary-button" id="choosePractice" type="button"><span aria-hidden="true">✦</span><span data-i18n="tasbih.choosePractice">Dhikr collections</span></button><button class="secondary-button" id="saveTasbih" type="button"><span aria-hidden="true">♡</span><span data-i18n="tasbih.save">Save</span></button></div>
+          <p class="session-note" id="tasbihStatus" aria-live="polite"></p>
+        </section>
+
+        <section class="screen" id="scratch" data-screen="scratch">
+          <div class="screen-topline"><span class="eyebrow" data-i18n="scratch.eyebrow">A small Sunnah for today</span><span class="scratch-safe" data-i18n="scratch.safe">Touch-friendly</span></div>
+          <h1 data-i18n="scratch.title">Scratch to discover</h1><p class="screen-intro" data-i18n="scratch.intro">Move your finger over the cover to reveal a gentle reminder.</p>
+          <div class="scratch-card" id="scratchCard"><article class="sunna-content" id="sunnaContent" aria-live="polite"></article><canvas id="scratchCanvas" aria-label="Scratch the card to reveal its reminder"></canvas><div class="scratch-hint" id="scratchHint" aria-hidden="true"><span>☝</span><span data-i18n="scratch.hint">Сотрите весь золотой слой</span></div></div>
+          <div class="scratch-meter" aria-live="polite"><span id="scratchPercent">0%</span><div><i id="scratchBar"></i></div><span data-i18n="scratch.revealed">revealed</span></div>
+          <div class="split-actions"><button class="secondary-button" id="revealSunna" type="button"><span aria-hidden="true">◌</span><span data-i18n="scratch.reveal">Reveal card</span></button><button class="primary-button" id="newSunna" type="button"><span aria-hidden="true">✦</span><span data-i18n="scratch.new">New card</span></button></div>
+          <p class="source-note" data-i18n="scratch.sourceNote">These are concise renderings; check wording in primary sources.</p>
+        </section>
+
+        <section class="screen" id="knowledge" data-screen="knowledge">
+          <div class="screen-topline"><span class="eyebrow" data-i18n="knowledge.eyebrow">Read with benefit</span><span class="reading-badge" id="knowledgeCount">6</span></div>
+          <h1 data-i18n="knowledge.title">Knowledge & benefit</h1><p class="screen-intro" data-i18n="knowledge.intro">Short, grounded reminders for a thoughtful day.</p>
+          <section class="knowledge-quest"><span class="quest-orb">✦</span><div><small>ЗНАНИЕ НА СЕГОДНЯ</small><strong id="knowledgeQuestTitle">Откройте одно напоминание</strong><p id="knowledgeQuestText">Нажмите карточку, прочитайте источник и выберите небольшой шаг.</p></div><button id="newKnowledgeQuest" type="button" aria-label="New daily knowledge">↻</button></section>
+          <button class="daily-insight" id="openDailyInsight" type="button"><span class="insight-spark">✦</span><span><small data-i18n="knowledge.today">Today’s reflection</small><strong id="dailyInsightTitle">A small good deed</strong><em id="dailyInsightSource">Sahih Muslim, 2626</em></span><b aria-hidden="true">›</b></button>
+          <div class="knowledge-filters" id="knowledgeFilters" aria-label="Knowledge topics"></div><div class="knowledge-grid" id="knowledgeCards" aria-live="polite"></div>
+        </section>
+
+        <section class="screen" id="assistant" data-screen="assistant">
+          <div class="screen-topline"><span class="eyebrow" data-i18n="assistant.eyebrow">A considerate guide</span><span class="source-chip" data-i18n="assistant.sourceOnly">Qur’an · Sahih sources</span></div>
+          <h1 data-i18n="assistant.title">Islamic guide</h1><p class="assistant-disclaimer" data-i18n="assistant.disclaimer">This is a reference helper, not a replacement for a scholar or imam.</p>
+          <div class="source-rail"><span>۝ <b data-i18n="assistant.quran">Qur’an</b></span><span>◈ <b data-i18n="assistant.bukhari">Sahih al-Bukhari</b></span><span>◈ <b data-i18n="assistant.muslim">Sahih Muslim</b></span></div>
+          <div class="prompt-chips" id="promptChips" aria-label="Frequently asked questions"></div><div class="chat" id="chatMessages" aria-live="polite" aria-label="Chat with the guide"></div>
+          <form class="chat-form" id="chatForm"><label class="sr-only" for="chatInput" data-i18n="assistant.inputLabel">Your question</label><textarea id="chatInput" rows="1" maxlength="700" data-i18n-placeholder="assistant.placeholder" placeholder="Ask a considerate question…"></textarea><button id="sendMessage" type="submit" aria-label="Send"><span aria-hidden="true">↑</span></button></form>
+          <p class="assistant-footnote" data-i18n="assistant.footnote">For a personal or disputed matter, please speak with a knowledgeable local imam.</p>
+        </section>
+
+        <section class="screen" id="quran" data-screen="quran">
+          <div class="eyebrow" data-i18n="quran.eyebrow">Listen attentively</div><h1 data-i18n="quran.title">The Noble Qur’an</h1>
+          <div class="quran-art" aria-hidden="true"><span>۝</span><div class="star star-one"></div><div class="star star-two"></div><div class="moon"></div></div>
+          <label class="field-label" for="reciterSelect" data-i18n="quran.reciter">Reciter</label><select id="reciterSelect" class="select-field"></select><label class="field-label" for="surahSelect" data-i18n="quran.surah">Surah</label><select id="surahSelect" class="select-field"></select>
+          <div class="now-playing"><span class="now-playing-label" data-i18n="quran.nowPlaying">Now playing</span><strong id="nowPlaying">—</strong></div><audio id="quranAudio" preload="metadata"></audio>
+          <div class="audio-progress"><input type="range" id="audioSeek" min="0" max="100" value="0" aria-label="Audio position" /><div><span id="currentTime">0:00</span><span id="duration">0:00</span></div></div><div class="player-controls"><button class="round-button" id="previousSurah" type="button" aria-label="Previous surah">‹</button><button class="play-button" id="playAudio" type="button" aria-label="Play">▶</button><button class="round-button" id="nextSurah" type="button" aria-label="Next surah">›</button></div>
+          <p class="source-note" data-i18n="quran.audioNote">Audio is streamed from public external libraries; an internet connection is required.</p>
+        </section>
+
+        <section class="screen" id="stories" data-screen="stories">
+          <div class="screen-topline"><span class="eyebrow">ВАШЕ ПРОСТРАНСТВО</span><button class="refresh-button" id="refreshStories" type="button" aria-label="Refresh stories">↻</button></div><h1>Ваши истории</h1><p class="screen-intro">Расскажите о своём пути, благодарности или важном уроке. Сообщение сначала попадёт в закрытую очередь поддержки.</p>
+          <div class="stories-status" id="storiesStatus" role="status" aria-live="polite"></div><div class="stories-list" id="storiesList"></div>
+          <button class="submit-story-cta" id="openStoryForm" type="button"><span>✎</span><span><strong>Написать в поддержку</strong><small>Сообщение увидит только модератор; публикация — лишь после его решения</small></span><b>›</b></button><p class="source-note">Не добавляйте телефоны, адреса, документы и другие личные данные.</p>
+        </section>
+
+        <section class="screen" id="settings" data-screen="settings">
+          <div class="eyebrow" data-i18n="settings.eyebrow">Your space</div><h1 data-i18n="settings.title">Settings & FAQ</h1>
+          <section class="settings-group"><h2 data-i18n="settings.experience">Experience</h2>
+            <section class="settings-card"><div><h3 data-i18n="settings.appearance">Appearance</h3><p data-i18n="settings.appearanceHint">Light or dark theme</p></div><button class="switch" id="settingsTheme" type="button" role="switch" aria-checked="false"><i></i></button></section>
+            <section class="settings-card"><div><h3 data-i18n="settings.sound">Gentle sounds</h3><p data-i18n="settings.soundHint">Tones for dhikr, tabs, and milestones</p></div><button class="switch" id="soundToggle" type="button" role="switch" aria-checked="true"><i></i></button></section>
+            <section class="settings-card"><div><h3 data-i18n="settings.haptics">Haptic feedback</h3><p data-i18n="settings.hapticsHint">Short vibration when supported</p></div><button class="switch" id="hapticsToggle" type="button" role="switch" aria-checked="true"><i></i></button></section>
+            <section class="settings-card"><div><h3 data-i18n="settings.motion">Reduce motion</h3><p data-i18n="settings.motionHint">Softer transitions and effects</p></div><button class="switch" id="motionToggle" type="button" role="switch" aria-checked="false"><i></i></button></section>
+          </section>
+          <section class="settings-group"><h2 data-i18n="settings.languageSection">Language & typography</h2><section class="settings-card language-setting"><div><h3 data-i18n="settings.language">Language</h3><p data-i18n="settings.languageHint">Interface, content, and script-aware font</p></div><select id="settingsLanguageSelect" aria-label="Language"></select></section></section>
+          <section class="settings-group"><h2 data-i18n="settings.appSection">App & data</h2>
+            <button class="install-card" id="installApp" type="button"><span>↓</span><span><strong data-i18n="settings.install">Install app</strong><small id="installHint" data-i18n="settings.installHint">Use it like an app on your phone</small></span><b>›</b></button>
+            <button class="settings-link" id="exportData" type="button"><span>⇩</span><span><strong data-i18n="settings.export">Export my local data</strong><small data-i18n="settings.exportHint">A private backup file on this device</small></span></button>
+            <a class="settings-link" href="./moderator.html" target="_blank" rel="noopener"><span>✓</span><span><strong data-i18n="settings.moderate">Moderate submitted stories</strong><small data-i18n="settings.moderateHint">Requires your server admin token</small></span></a>
+            <button class="settings-link danger-link" id="openClearData" type="button"><span>⌫</span><span><strong data-i18n="settings.clearData">Clear local app data</strong><small data-i18n="settings.clearDataHint">This never affects published stories on your server</small></span></button>
+          </section>
+          <section class="privacy-card"><span>◌</span><p data-i18n="settings.privacy">Your counter and preferences stay in this browser. Stories are only sent after you deliberately submit the form.</p></section><section class="faq-section"><h2 data-i18n="faq.title">Frequently asked questions</h2><div id="faqList"></div></section>
+        </section>
+      </main>
+
+      <nav class="bottom-nav" aria-label="Primary navigation">
+        <button class="nav-item active" data-target="tasbih" type="button"><span>◉</span><small data-i18n="nav.tasbih">Tasbih</small></button><button class="nav-item" data-target="scratch" type="button"><span>✦</span><small data-i18n="nav.sunna">Sunnah</small></button><button class="nav-item" data-target="knowledge" type="button"><span>▤</span><small data-i18n="nav.knowledge">Learn</small></button><button class="nav-item" data-target="assistant" type="button"><span>✧</span><small data-i18n="nav.assistant">Guide</small></button><button class="nav-item" data-target="quran" type="button"><span>♬</span><small data-i18n="nav.quran">Qur’an</small></button><button class="nav-item" data-target="stories" type="button"><span>✎</span><small data-i18n="nav.stories">Stories</small></button><button class="nav-item" data-target="settings" type="button"><span>☰</span><small data-i18n="nav.settings">More</small></button>
+      </nav>
+    </div>
+
+    <dialog id="practiceDialog" class="modal practice-modal"><form method="dialog"><button class="modal-close" value="cancel" aria-label="Close">×</button><div class="eyebrow" data-i18n="tasbih.collectionsEyebrow">Choose your practice</div><h2 data-i18n="tasbih.collectionsTitle">Dhikr collections</h2><p data-i18n="tasbih.collectionsIntro">Select a gentle, structured set or keep a free counter.</p><div id="practiceList" class="practice-list"></div></form></dialog>
+    <dialog id="knowledgeDialog" class="modal"><form method="dialog"><button class="modal-close" value="cancel" aria-label="Close">×</button><div class="eyebrow" id="knowledgeModalLabel">Reflection</div><h2 id="knowledgeModalTitle">—</h2><p id="knowledgeModalText">—</p><div class="modal-source" id="knowledgeModalSource">—</div><p class="modal-action" id="knowledgeModalAction">—</p><button class="primary-button wide" value="close" type="submit" data-i18n="common.close">Close</button></form></dialog>
+    <dialog id="storyDialog" class="modal story-modal"><form id="storyForm" novalidate><button class="modal-close" value="cancel" type="button" id="closeStoryDialog" aria-label="Close">×</button><div class="eyebrow" data-i18n="stories.formEyebrow">Send for review</div><h2 data-i18n="stories.formTitle">Share with care</h2><p data-i18n="stories.formIntro">Your story is private until you approve this submission and a moderator publishes it.</p><label class="field-label" for="storyAuthor" data-i18n="stories.author">Name or pen name</label><input class="modal-input" id="storyAuthor" name="author" maxlength="70" autocomplete="nickname" required /><label class="field-label" for="storyTitle" data-i18n="stories.storyTitle">Title</label><input class="modal-input" id="storyTitle" name="title" maxlength="120" required /><label class="field-label" for="storyBody" data-i18n="stories.body">Your story</label><textarea class="modal-input story-body" id="storyBody" name="body" maxlength="3000" rows="7" required></textarea><label class="consent"><input id="storyConsent" type="checkbox" required /><span data-i18n="stories.consent">I understand that this story is sent to the site moderator for review and should contain no sensitive personal information.</span></label><p class="form-feedback" id="storyFeedback" aria-live="polite"></p><button class="primary-button wide" id="submitStory" type="submit" data-i18n="stories.submit">Send for review</button></form></dialog>
+    <dialog id="installDialog" class="modal"><form method="dialog"><button class="modal-close" value="cancel" aria-label="Close">×</button><div class="eyebrow" data-i18n="settings.install">Install app</div><h2 id="installDialogTitle">Install Nur</h2><p id="installDialogText">—</p><ol class="install-steps" id="installSteps"></ol><button class="primary-button wide" id="installPromptButton" type="button" hidden data-i18n="settings.installNow">Install now</button><button class="secondary-button wide" value="close" type="submit" data-i18n="common.close">Close</button></form></dialog>
+    <dialog id="clearDataDialog" class="modal"><form method="dialog"><button class="modal-close" value="cancel" aria-label="Close">×</button><div class="eyebrow" data-i18n="settings.dataWarning">Device data</div><h2 data-i18n="settings.clearData">Clear local app data</h2><p data-i18n="settings.clearConfirm">This removes only this browser’s Nur counter, saved practice history, and preferences. It cannot remove stories already sent to your server.</p><div class="modal-buttons"><button class="secondary-button" value="cancel" type="submit" data-i18n="common.cancel">Cancel</button><button class="danger-button" id="confirmClearData" value="confirm" type="submit" data-i18n="settings.clearNow">Clear data</button></div></form></dialog>
+    <div class="toast" id="toast" role="status" aria-live="polite"></div>
+    <svg class="svg-sprite" aria-hidden="true"><symbol id="icon-moon" viewBox="0 0 24 24"><path d="M20.4 15.3A8.6 8.6 0 0 1 8.7 3.6 8.7 8.7 0 1 0 20.4 15.3Z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></symbol></svg>
+    <script type="module" src="./js/app.js?v=6"></script>
+  </body>
+</html>

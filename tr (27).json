@@ -1,0 +1,172 @@
+{
+  "nav": {
+    "tasbih": "Tesbih",
+    "sunna": "Sünnet",
+    "knowledge": "Bilgi",
+    "assistant": "YZ",
+    "quran": "Kur'an",
+    "settings": "Diğer"
+  },
+  "common": {
+    "save": "Kaydet",
+    "cancel": "İptal",
+    "close": "Kapat"
+  },
+  "tasbih": {
+    "eyebrow": "Bilinçli ibadet",
+    "title": "Akıllı tesbih",
+    "save": "Kaydet",
+    "chooseDhikr": "Zikri seçin",
+    "tap": "zikir için dokunun",
+    "reset": "Sıfırla",
+    "savedToday": "Bugün kaydedilen: {count}",
+    "saved": "Sonuç cihaz günlüğüne kaydedildi",
+    "resetDone": "Sayaç sıfırlandı",
+    "goalDone": "Maşallah! {goal} hedefine ulaşıldı.",
+    "dhikrs": [
+      {
+        "arabic": "سُبْحَانَ ٱللَّٰهِ",
+        "label": "Sübhanallah",
+        "transcription": "Subḥānallāh"
+      },
+      {
+        "arabic": "ٱلْحَمْدُ لِلَّٰهِ",
+        "label": "Elhamdülillah",
+        "transcription": "Elḥamdülillāh"
+      },
+      {
+        "arabic": "ٱللَّٰهُ أَكْبَرُ",
+        "label": "Allahu ekber",
+        "transcription": "Allāhu ekber"
+      },
+      {
+        "arabic": "لَا إِلَٰهَ إِلَّا ٱللَّٰهُ",
+        "label": "Lâ ilâhe illallah",
+        "transcription": "Lā ilāhe illallāh"
+      }
+    ]
+  },
+  "scratch": {
+    "eyebrow": "Bugünün küçük sünneti",
+    "title": "Sil ve öğren",
+    "intro": "Koruyucu katmanın üzerinde parmağınızı gezdirin; güzel bir hatırlatma ortaya çıkacak.",
+    "hint": "Burayı silin",
+    "revealed": "açıldı",
+    "new": "Yeni kart",
+    "complete": "Hatırlatma tamamen açıldı ✦",
+    "sourceNote": "Hatırlatmalar kısa aktarımlardır; ifadeleri birincil kaynaklardan doğrulayın.",
+    "sunnahs": [
+      {
+        "quote": "Kardeşini güler yüzle karşılamak bile olsa, hiçbir iyiliği küçümseme.",
+        "source": "Sahih Müslim, 2626"
+      },
+      {
+        "quote": "Allah, her işte yumuşaklığı sever.",
+        "source": "Sahih el-Buhârî, 6927; Sahih Müslim, 2165"
+      },
+      {
+        "quote": "Merhamet etmeyene merhamet edilmez.",
+        "source": "Sahih el-Buhârî, 6013; Sahih Müslim, 2318"
+      },
+      {
+        "quote": "Sizin en hayırlınız, ahlâkı en güzel olanınızdır.",
+        "source": "Sahih el-Buhârî, 6035"
+      }
+    ]
+  },
+  "knowledge": {
+    "eyebrow": "Faydalı okumalar",
+    "title": "Bilgi ve fayda",
+    "intro": "Kartları kaydırın, önemli olanları kaydedin ve uygun olduğunuzda yeniden dönün.",
+    "read": "Bugün küçük bir adım",
+    "cards": [
+      {
+        "label": "Cömertlik",
+        "title": "Sadaka malı eksiltmez",
+        "text": "Peygamber ﷺ sadakanın malı eksiltmediğini bildirmiştir. Küçük ama düzenli bir destek, şükretmeyi ve insanlara özen göstermeyi besleyebilir.",
+        "source": "Sahih Müslim, 2588",
+        "color": "#0b7160"
+      },
+      {
+        "label": "Zikir",
+        "title": "Sabaha zikirle başlayın",
+        "text": "Kur'an, müminleri Allah'ı çokça zikretmeye çağırır. Düşünerek yapılan birkaç sakin zikir dakikası, güne nazik bir dayanak olabilir.",
+        "source": "Kur'an, 33:41",
+        "color": "#946a25"
+      },
+      {
+        "label": "Gece",
+        "title": "Teheccüdün sakin vakti",
+        "text": "Gece kılınan nafile namaz, Allah'a baş başa yönelme fırsatıdır. Küçük başlayın; gönüllü ibadeti ağır bir yük hâline getirmeyin.",
+        "source": "Kur'an, 17:79",
+        "color": "#53427c"
+      }
+    ]
+  },
+  "assistant": {
+    "eyebrow": "Özenli yardımcı",
+    "title": "İslami YZ",
+    "disclaimer": "Bu, bilgi amaçlı bir yardımcıdır; âlimin veya imamın yerini tutmaz.",
+    "inputLabel": "Sorunuz",
+    "placeholder": "Nazik bir soru sorun…",
+    "connection": "API'yi güvenle bağla",
+    "apiEyebrow": "Entegrasyon",
+    "apiTitle": "YZ bağlantısı",
+    "apiHint": "Canlı kullanım için API anahtarını saklayan güvenli kendi sunucunuzu kullanın. Aşağıdaki anahtar yalnızca sekme belleğinde kalır.",
+    "endpoint": "Endpoint adresi",
+    "apiKey": "API anahtarı (isteğe bağlı)",
+    "model": "Model",
+    "greeting": "Esselâmü aleyküm. Yalnızca bilgi amaçlı bir yardımcı olarak; Kur'an ve sahih hadisler temelinde, fetva vermeden cevap veririm. Nasıl yardımcı olabilirim?",
+    "assistantLabel": "Yardımcı",
+    "youLabel": "Siz",
+    "offline": "Güvenli yerel mod şu anda etkin. Model yanıtı almak için kendi güvenli endpoint'inizi bağlayın.",
+    "error": "Yanıt alınamadı. Endpoint adresini, CORS'u ve sunucu ayarlarını kontrol edin.",
+    "chips": [
+      "Abdest nasıl doğru alınır?",
+      "Orucu neler bozar?",
+      "Duanın kabul şartları"
+    ]
+  },
+  "quran": {
+    "eyebrow": "Dikkatle dinleyin",
+    "title": "Yüce Kur'an",
+    "reciter": "Kâri",
+    "surah": "Sure",
+    "nowPlaying": "Şimdi çalıyor",
+    "audioNote": "Ses, herkese açık harici kaynaklardan yayınlanır; dinlemek için internet gerekir.",
+    "loading": "Ses yükleniyor…",
+    "audioError": "Ses kullanılamıyor. İnternetinizi kontrol edin veya başka bir kâri seçin."
+  },
+  "settings": {
+    "eyebrow": "Sizin alanınız",
+    "title": "Ayarlar ve SSS",
+    "appearance": "Görünüm",
+    "appearanceHint": "Açık veya koyu tema",
+    "language": "Dil",
+    "languageHint": "Arayüz ve içerik",
+    "install": "Uygulamayı yükle",
+    "installHint": "Telefonda PWA olarak çalışır",
+    "installUnavailable": "Yüklemek için siteyi HTTPS veya localhost üzerinden tarayıcıda açın."
+  },
+  "faq": {
+    "title": "Sık sorulan sorular",
+    "items": [
+      {
+        "q": "Tesbih sayım kaydedilir mi?",
+        "a": "Evet. Mevcut sayım, hedef ve seçilen zikir yalnızca bu tarayıcının localStorage alanında saklanır. Site verilerini temizlemek bunları siler."
+      },
+      {
+        "q": "Uygulamayı internetsiz kullanabilir miyim?",
+        "a": "İlk açılıştan sonra arayüz ve yerel tesbih çevrimdışı kullanılabilir. Ses ve bağlı YZ için internet gerekir."
+      },
+      {
+        "q": "YZ fetva verebilir mi?",
+        "a": "Hayır. Yardımcı yalnızca bilgi amaçlı yanıtlar için tasarlanmıştır. Kişisel, zor veya ihtilaflı konularda bilgili yerel bir imama danışın."
+      },
+      {
+        "q": "İslami hükümlerle ilgili görüşler neden bazen farklıdır?",
+        "a": "Bazı meselelerde âlimler ve fıkıh ekolleri arasında kabul edilmiş görüş ayrılıkları vardır. Uygulama kullanıcı adına bir görüş seçmez."
+      }
+    ]
+  }
+}

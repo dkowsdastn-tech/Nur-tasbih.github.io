@@ -1,0 +1,13 @@
+# Copy this file to .env and replace the value with a long, unique secret.
+# The server deliberately disables admin routes until this value is configured.
+ADMIN_TOKEN=replace-with-a-long-random-admin-token
+
+# Port for both the API and the PWA static files.
+PORT=8080
+
+# Optional comma-separated additional origins for a separately hosted frontend.
+# Same-origin requests are always accepted. Do not use * for an admin API.
+ALLOWED_ORIGINS=https://example.com
+
+# Maximum JSON request size in bytes (1 KiB–64 KiB; default 16384).
+MAX_BODY_BYTES=16384

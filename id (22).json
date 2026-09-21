@@ -1,0 +1,172 @@
+{
+  "nav": {
+    "tasbih": "Tasbih",
+    "sunna": "Sunnah",
+    "knowledge": "Ilmu",
+    "assistant": "AI",
+    "quran": "Al-Qur'an",
+    "settings": "Lainnya"
+  },
+  "common": {
+    "save": "Simpan",
+    "cancel": "Batal",
+    "close": "Tutup"
+  },
+  "tasbih": {
+    "eyebrow": "Ibadah dengan kesadaran",
+    "title": "Tasbih pintar",
+    "save": "Simpan",
+    "chooseDhikr": "Pilih zikir",
+    "tap": "ketuk untuk berzikir",
+    "reset": "Atur ulang",
+    "savedToday": "Tersimpan hari ini: {count}",
+    "saved": "Hasil disimpan di jurnal perangkat",
+    "resetDone": "Hitungan diatur ulang",
+    "goalDone": "MasyaAllah! Target {goal} telah tercapai.",
+    "dhikrs": [
+      {
+        "arabic": "سُبْحَانَ ٱللَّٰهِ",
+        "label": "Subhanallah",
+        "transcription": "Subḥānallāh"
+      },
+      {
+        "arabic": "ٱلْحَمْدُ لِلَّٰهِ",
+        "label": "Alhamdulillah",
+        "transcription": "Alḥamdulillāh"
+      },
+      {
+        "arabic": "ٱللَّٰهُ أَكْبَرُ",
+        "label": "Allahu Akbar",
+        "transcription": "Allāhu Akbar"
+      },
+      {
+        "arabic": "لَا إِلَٰهَ إِلَّا ٱللَّٰهُ",
+        "label": "La ilaha illallah",
+        "transcription": "Lā ilāha illallāh"
+      }
+    ]
+  },
+  "scratch": {
+    "eyebrow": "Sunnah kecil hari ini",
+    "title": "Gosok dan temukan",
+    "intro": "Usapkan jari pada lapisan pelindung untuk membuka pengingat yang baik.",
+    "hint": "Gosok di sini",
+    "revealed": "terbuka",
+    "new": "Kartu baru",
+    "complete": "Pengingat telah terbuka sepenuhnya ✦",
+    "sourceNote": "Pengingat ini berupa ringkasan singkat; periksa redaksinya pada sumber primer.",
+    "sunnahs": [
+      {
+        "quote": "Jangan meremehkan satu pun kebaikan, walaupun hanya menemui saudaramu dengan wajah yang ramah.",
+        "source": "Sahih Muslim, 2626"
+      },
+      {
+        "quote": "Allah menyukai kelembutan dalam setiap urusan.",
+        "source": "Sahih al-Bukhari, 6927; Sahih Muslim, 2165"
+      },
+      {
+        "quote": "Siapa yang tidak menyayangi, tidak akan disayangi.",
+        "source": "Sahih al-Bukhari, 6013; Sahih Muslim, 2318"
+      },
+      {
+        "quote": "Orang terbaik di antara kalian adalah yang paling baik akhlaknya.",
+        "source": "Sahih al-Bukhari, 6035"
+      }
+    ]
+  },
+  "knowledge": {
+    "eyebrow": "Bacaan yang bermanfaat",
+    "title": "Ilmu dan manfaat",
+    "intro": "Geser kartu, simpan yang penting, lalu kembali membacanya saat Anda siap.",
+    "read": "Langkah kecil hari ini",
+    "cards": [
+      {
+        "label": "Kedermawanan",
+        "title": "Sedekah tidak mengurangi harta",
+        "text": "Nabi ﷺ mengabarkan bahwa sedekah tidak mengurangi harta. Dukungan yang kecil namun rutin dapat menumbuhkan rasa syukur dan kepedulian kepada sesama.",
+        "source": "Sahih Muslim, 2588",
+        "color": "#0b7160"
+      },
+      {
+        "label": "Zikir",
+        "title": "Mulai pagi dengan zikir",
+        "text": "Al-Qur'an mengajak orang-orang beriman untuk banyak mengingat Allah. Beberapa menit zikir yang tenang dan dihayati dapat menjadi sandaran lembut untuk memulai hari.",
+        "source": "Al-Qur'an, 33:41",
+        "color": "#946a25"
+      },
+      {
+        "label": "Malam",
+        "title": "Waktu sunyi Tahajud",
+        "text": "Salat malam sunnah adalah kesempatan untuk menghadap Allah secara pribadi. Mulailah dari yang kecil dan jangan jadikan ibadah sukarela sebagai beban yang berat.",
+        "source": "Al-Qur'an, 17:79",
+        "color": "#53427c"
+      }
+    ]
+  },
+  "assistant": {
+    "eyebrow": "Asisten yang penuh perhatian",
+    "title": "AI Islami",
+    "disclaimer": "Ini adalah asisten informatif, bukan pengganti ulama atau imam.",
+    "inputLabel": "Pertanyaan Anda",
+    "placeholder": "Ajukan pertanyaan dengan santun…",
+    "connection": "Hubungkan API dengan aman",
+    "apiEyebrow": "Integrasi",
+    "apiTitle": "Koneksi AI",
+    "apiHint": "Untuk penggunaan produksi, gunakan server aman Anda sendiri yang menyimpan kunci API. Kunci di bawah hanya tersimpan di memori tab ini.",
+    "endpoint": "Alamat endpoint",
+    "apiKey": "Kunci API (opsional)",
+    "model": "Model",
+    "greeting": "Assalamu'alaikum. Saya hanya menjawab sebagai asisten informatif: berdasarkan Al-Qur'an dan hadis sahih, tanpa mengeluarkan fatwa. Ada yang bisa saya bantu?",
+    "assistantLabel": "Asisten",
+    "youLabel": "Anda",
+    "offline": "Mode lokal aman sedang aktif. Hubungkan endpoint aman Anda sendiri untuk mendapatkan jawaban model.",
+    "error": "Jawaban tidak dapat diperoleh. Periksa alamat endpoint, CORS, dan pengaturan server.",
+    "chips": [
+      "Bagaimana berwudu dengan benar?",
+      "Apa yang membatalkan puasa?",
+      "Syarat diterimanya doa"
+    ]
+  },
+  "quran": {
+    "eyebrow": "Dengarkan dengan penuh perhatian",
+    "title": "Al-Qur'an Suci",
+    "reciter": "Qari",
+    "surah": "Surah",
+    "nowPlaying": "Sedang diputar",
+    "audioNote": "Audio diputar dari perpustakaan publik eksternal; internet diperlukan untuk mendengarkannya.",
+    "loading": "Memuat audio…",
+    "audioError": "Audio tidak tersedia. Periksa internet Anda atau pilih qari lain."
+  },
+  "settings": {
+    "eyebrow": "Ruang Anda",
+    "title": "Pengaturan dan FAQ",
+    "appearance": "Tampilan",
+    "appearanceHint": "Tema terang atau gelap",
+    "language": "Bahasa",
+    "languageHint": "Antarmuka dan konten",
+    "install": "Pasang aplikasi",
+    "installHint": "Berfungsi sebagai PWA di ponsel",
+    "installUnavailable": "Untuk memasang, buka situs di browser melalui HTTPS atau localhost."
+  },
+  "faq": {
+    "title": "Pertanyaan umum",
+    "items": [
+      {
+        "q": "Apakah hitungan tasbih saya disimpan?",
+        "a": "Ya. Hitungan saat ini, target, dan zikir yang dipilih disimpan hanya di localStorage browser ini. Menghapus data situs akan menghapus semuanya."
+      },
+      {
+        "q": "Bisakah aplikasi digunakan tanpa internet?",
+        "a": "Setelah pertama kali dibuka, antarmuka dan tasbih lokal tersedia secara offline. Audio dan AI yang terhubung memerlukan internet."
+      },
+      {
+        "q": "Dapatkah AI mengeluarkan fatwa?",
+        "a": "Tidak. Asisten ini hanya dibuat untuk jawaban informatif. Untuk persoalan pribadi, sulit, atau diperselisihkan, tanyakan kepada imam setempat yang berilmu."
+      },
+      {
+        "q": "Mengapa pendapat tentang aturan Islam terkadang berbeda?",
+        "a": "Dalam sebagian masalah terdapat perbedaan pendapat yang diakui di antara ulama dan mazhab fikih. Aplikasi tidak memilih satu pendapat untuk pengguna."
+      }
+    ]
+  }
+}

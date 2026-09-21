@@ -1,0 +1,40 @@
+name: Deploy Nur website
+
+on:
+  push:
+    branches: ["main"]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+jobs:
+  deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Prepare static site
+        run: |
+          mkdir site
+          cp islamic-pwa/index.html site/
+          cp islamic-pwa/moderator.html site/
+          cp islamic-pwa/manifest.webmanifest site/
+          cp islamic-pwa/sw.js site/
+          cp islamic-pwa/robots.txt site/
+          cp islamic-pwa/sitemap.xml site/
+          cp islamic-pwa/googled*.html site/ || true
+          cp -R islamic-pwa/assets site/
+          cp -R islamic-pwa/css site/
+          cp -R islamic-pwa/js site/
+          cp -R islamic-pwa/locales site/
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: site
+      - id: deployment
+        uses: actions/deploy-pages@v4
